@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(89490482, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/89490482" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+
+    <link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />
+    <title>LEVEL UP!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/c4b6a6be69.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo" id="logo">LEVEL UP!</a>
+        <ul>
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#sec">ABOUT</a></li>
+            <li><a href="privacy.html">PRIVACY POLICY</a></li>
+            <li><a href="https://play.google.com/store/apps/dev?id=6236128267733362757">DEVELOPER PAGE</a></li>
+            <li><a href="app-ads.txt">ADS.TXT</a></li>
+        </ul>
+    </header>
+    <section>
+
+        <img src="Images2/background.png" id="background">
+        <img src="Images2/sun.png" id="sun">
+        <img src="Images2/mountains.png" id="mountains">            
+        <h2 id="hello">Welcome To The Official Site</h2>
+
+        <img src="Images2/gradient.png" id="gradient">
+        <img src="Images2/last_mountain.png" id="last_mountain">
+        <img src="Images2/left_forest.png" id="left_forest">
+        <img src="Images2/right_forest.png" id="right_forest">
+        <img src="Images2/left_rocks.png" id="left_rocks">
+        <img src="Images2/right_rocks.png" id="right_rocks">
+    </section>
+    <div class="sec" id="sec">
+        
+        <p>FOR ALL QUESTIONS PLEASE E-MAIL: levelup_feedback@inbox.ru</p>
+        <div class="socials">
+            <a href="https://vk.com/fcrp.official">
+            <i class="fa-brands fa-vk"></i>
+            </a>
+            <a href="https://discord.gg/rJ6GEhqRGS">
+            <i class="fa-brands fa-discord"></i>
+            </a>
+            <a href="https://play.google.com/store/apps/dev?id=6236128267733362757">
+            <i class="fa-brands fa-google-play"></i>
+            </a>
+            <a href="https://apps.apple.com/us/developer/nikita-markelov/id1608949212">
+            <i class="fa-brands fa-app-store"></i>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_content">
+            <i class="email"> 
+                <a href="mailto:levelup_feedback@inbox.ru"><span class="color">TO ALL QUESTIONS MY EMAIL: levelup_feedback@inbox.ru</span></i></a>
+        </div>
+    </footer>
+
+
+
+    <script>
+        let background = document.getElementById('background');
+        let sun = document.getElementById('sun');
+        let left_rocks = document.getElementById('left_rocks');
+        let right_rocks = document.getElementById('right_rocks');
+        let left_forest = document.getElementById('left_forest');
+        let right_forest = document.getElementById('right_forest');
+        let hello = document.getElementById('hello');
+        let header = document.querySelector('header')
+
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            hello.style.top = 400 + value * 0.25 + 'px';
+            sun.style.top = value * 0.25 + 'px';
+            left_rocks.style.top = value * 0.1 + 'px';
+            left_rocks.style.marginLeft = -value * 0.1 + 'px';
+            right_rocks.style.top = value * 0.1 + 'px';
+            right_rocks.style.marginLeft = value * 0.1 + 'px';
+            left_forest.style.top = value * 0.1 + 'px';
+            left_forest.style.marginLeft = -value * 0.1 + 'px';
+            right_forest.style.top = value * 0.1 + 'px';
+            right_forest.style.marginLeft = value * 0.1 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+    </div>
+
+</body>
+
+</html>
